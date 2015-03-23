@@ -35,10 +35,6 @@
 (add-hook 'org-mode-hook 'ow/init-org-elisp-template)
 
 
-;; don't let 8 spaces convert to tabs
-(setq-default indent-tabs-mode nil)
-
-
 ;; Package
 
 ;;    Managing extensions for Emacs is simplified using =package= which is
@@ -228,7 +224,8 @@ PACKAGE is installed and the current version is deleted."
               split-width-threshold 100         ; Split verticly by default.
               compilation-scroll-output 1       ; Follow compilation buffer
               compilation-ask-about-save nil    ; Automatically save when compiling
-              auto-fill-function 'do-auto-fill) ; Auto-fill-mode everywhere.
+              auto-fill-function 'do-auto-fill  ; Auto-fill-mode everywhere.
+              indent-tabs-mode nil)             ; don't let spaces convert to tab
 
 ;; Answering /yes/ and /no/ to each question from Emacs can be tedious, a
 ;;    single /y/ or /n/ will suffice.
