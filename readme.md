@@ -1,26 +1,26 @@
-# readme
+# Readme
 
-to use any dotfiles in here..
+To use any dotfiles in here..
 
-create a symlink and just point to this cloned directory :)
+Create a symlink and just point to this cloned directory :)
 
-this will simplify any version control
+This will simplify any version control
 
-## git dotfiles setup
+## Emacs dotfiles setup
 
-move to home directory
+Move to home directory
 ```
 cd 
 ```
-clone repository
+Clone repository
 ```
 git clone https://github.com/owalk/dot_files.git
 ```
-if it exists, remove your current emacs dotfiles
+If it exists, remove your current emacs dotfiles
 ```
 rm -r .emacs.d
 ```
-make a symlink and use that as your .emacs.d
+Make a symlink and use that as your .emacs.d
 ```
 ln -s dot_files/.emacs.d/ ./emacs.d
 ```
