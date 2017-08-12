@@ -1,0 +1,16 @@
+;; Object javascripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "javascripts/"
+  :tables
+  (list
+    (semanticdb-table "expand.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "expand.js"
+      :pointmax 1055
+      :fsize 1054
+      :lastmodtime '(22907 27103 549854 963000)
+      :unmatched-syntax '((PAREN_BLOCK 20 . 1053) (DOT 14 . 15) (PAREN_BLOCK 2 . 14))))
+  :file "!home!oliver!shopperbot!app!assets!javascripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

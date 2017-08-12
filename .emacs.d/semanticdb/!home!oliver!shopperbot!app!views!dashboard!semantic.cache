@@ -1,0 +1,62 @@
+;; Object dashboard/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dashboard/"
+  :tables
+  (list
+    (semanticdb-table "post_feedback.html.erb"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Show Full Blog Post <i class=\"fa fa-caret-right\">" anchor nil nil [36 39])
+            ("Show Full Blog Post <i class=\"fa fa-caret-right\">" section (:members 
+              ( ("4 Comments" section (:members 
+                  ( ("Momoko Price" section (:members 
+                      ( ("Momoko Price" anchor nil nil [659 662])
+                        ("Reply" anchor nil nil [953 956]))                      ) nil [633 1177])
+                    ("John McDowall" section (:members 
+                      ( ("John McDowall" anchor nil nil [1203 1206])
+                        ("Reply" anchor nil nil [1346 1349]))                      ) nil [1177 1597])
+                    ("Momoko Price" section (:members 
+                      ( ("Momoko Price" anchor nil nil [1623 1626])
+                        ("Reply" anchor nil nil [1942 1945]))                      ) nil [1597 2181])
+                    ("John McDowall" section (:members 
+                      ( ("John McDowall" anchor nil nil [2207 2210])
+                        ("Reply" anchor nil nil [2399 2402]))                      ) nil [2181 4674]))                  ) nil [435 4674]))              ) nil [94 4674]))          
+      :file "post_feedback.html.erb"
+      :pointmax 4674
+      :fsize 4673
+      :lastmodtime '(22926 64998 639476 934000)
+      :unmatched-syntax nil)
+    (semanticdb-table "change_users.html.erb"
+      :major-mode 'html-mode
+      :tags 
+        '( ("List of Shopper Bot Users" section nil nil [87 1010]))          
+      :file "change_users.html.erb"
+      :pointmax 1010
+      :fsize 1009
+      :lastmodtime '(22917 57208 403084 578000)
+      :unmatched-syntax nil)
+    (semanticdb-table "index.html.erb"
+      :major-mode 'html-mode
+      :tags 
+        '( ("My Blog Posts" section nil nil [88 295])
+            ("Post Status: <%=post_status_message(post)%>" section (:members 
+              ( ("&bull; <time><%= post_create_time(post) %>" anchor nil nil [990 993]))              ) nil [295 1696]))          
+      :file "index.html.erb"
+      :pointmax 1696
+      :fsize 1695
+      :lastmodtime '(22920 58364 989002 423000)
+      :unmatched-syntax nil)
+    (semanticdb-table "post_submissions.html.erb"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Post Submissions" section (:members 
+              ( ("no submissions yet!" section nil nil [523 1077])
+                ("last modified: <%= post_update_time(post)%>" section nil nil [1077 1808]))              ) nil [88 1808]))          
+      :file "post_submissions.html.erb"
+      :pointmax 1808
+      :fsize 1807
+      :lastmodtime '(22923 42034 918063 827000)
+      :unmatched-syntax nil))
+  :file "!home!oliver!shopperbot!app!views!dashboard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

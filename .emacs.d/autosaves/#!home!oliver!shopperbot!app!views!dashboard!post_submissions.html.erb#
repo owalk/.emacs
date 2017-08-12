@@ -1,0 +1,43 @@
+<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-md-offset-2">
+
+  <h1>Post Submissions</h1>
+  <p>you may pick any submissions in the below list to approve or deny. The submissions will be displayed in order of oldest to newest so that the older submissions are more likely get proccessed first.</p>
+  <p>If you deny a submission you must include thoughtful feedback explaining all changes to the post that must be made for the post to pass the submission process.</p>
+
+  <%if @posts.length == 0%>
+    <h3>no submissions yet!</h3>
+  <% else %>
+    <ol class="list-unstyled">
+      <% @posts.each do |post| %>
+        <div class="display-posts">
+          <li>
+            <div class="display-posts-right-infobox">
+              <p class="<%= alert_classes( post.approval.content_is_approved) %>">Content: <%=content_approved_message(post)%></p>
+              <p class="<%= alert_classes( post.approval.grammar_is_approved) %>">Grammar: <%=grammar_approved_message(post)%></p>
+            </div>
+            <div class="display-post-content">
+              <h2><%= post.title%></h2>
+              <p>last modified: <%= post_update_time(post)%></p>
+              <p>
+                <ul class="list-inline">
+                  <li>
+                    <%= link_to "Approve or Deny", '/dashboard/admin/post_approval/'+post.slug.to_s %>
+                  </li>
+                  <li>
+                      <%= link_to "Leave Some Feedback", '/dashboard/admin/post_feedback/'+post.slug.to_s %>
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </li>
+        </div>
+        <div class=newline></div>
+      <% end %>
+    </ol>
+  <%end%>
+
+</div>
+
+<% content_for :javascript do %>
+    <% google_analytics('/dashboard/admin/post_submissions') %>
+<%end%>

@@ -1,0 +1,105 @@
+
+<ul class = "no-dots">
+  <li>
+    <a href="#" class="toggle-expand" id="blog-anchor">
+      <h2>
+        Show Full Blog Post <i class="fa fa-caret-right"></i>
+      </h2>
+
+    </a>
+    <div class="expandable" id="blog">
+      <%= render 'post', locals: {post: @post}%>
+    </div>
+  </li>
+</ul>
+
+<section class='comments row'>
+  <div class='col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1'>
+    <hr>
+    <h3>4 Comments</h3>
+    <div class="media">
+      <a class="pull-left avatar" href="#">
+        <%= random_avatar 40, 'media-object img-rounded' %>
+      </a>
+      <div class="media-body">
+        <h5 class="media-heading"><a href="">Momoko Price</a><time>5h ago</time></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maiores aliquam natus, voluptatum id ut nulla quo ullam dolore exercitationem! Itaque iste facilis consequatur doloremque et, dolore sed dolorem in.</p>
+        <a href="#">Reply</a>
+        <div class="media">
+          <a class="pull-left avatar" href="#">
+            <%= random_avatar 40, 'media-object img-rounded' %>
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading"><a href="">John McDowall</a><time>17h ago</time></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#">Reply</a>
+          </div>
+        </div>
+        <div class="media">
+          <a class="pull-left avatar" href="#">
+           <%= random_avatar 40, 'media-object img-rounded' %>
+         </a>
+         <div class="media-body">
+          <h5 class="media-heading"><a href="">Momoko Price</a><time>2d ago</time></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dicta, omnis excepturi voluptatum consequuntur pariatur quidem rem ducimus error! Id rerum quod perferendis repellendus pariatur beatae aliquid, architecto, numquam et.</p>
+          <a href="#">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <a class="pull-left avatar" href="#">
+        <%= random_avatar 40, 'media-object img-rounded' %>
+      </a>
+      <div class="media-body">
+        <h5 class="media-heading"><a href="">John McDowall</a><time>3d ago</time></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#">Reply</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="well  mt50 mb50">
+    <form action="#" method="post" novalidate="" class="form">
+      <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1" style="visibility: visible;">
+          <div class="form-group">
+            <label class="control-label" for="contact-message">Join the discussion</label>
+            <div class="controls">
+              <textarea name="comments" placeholder="How can I make this post better?" class="form-control requiredField" rows="3" data-error-empty="Please enter comment"></textarea>
+              <span class="help-block text-muted">* required</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="form-group">
+                <label class="control-label">Name</label>
+                <div class="controls">
+                  <input name="contactName" placeholder="Name" class="form-control requiredField " type="text" data-error-empty="Please enter name">
+                  <span class="help-block text-muted">* required</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="contact-mail">Email</label>
+                <div class="controls">
+                  <input name="email" placeholder="Email" class="form-control requiredField" type="email" data-error-empty="Please enter email" data-error-invalid="Invalid email address">
+                  <span class="help-block text-muted">* required</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="form-group">
+                <button name="submit" type="submit" class="form-control btn btn-primary btn-flat" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Comment Sent">Send Comment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</section>
+</article>
